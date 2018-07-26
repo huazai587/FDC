@@ -117,9 +117,9 @@
 </template>
 
 <script>
-import TopNav from '../components/topnav.vue'
-import TopFan from '../components/topFan.vue'
-import Page from '../components/page.vue'
+const TopNav = () => import ('@/components/topnav')
+const TopFan = () => import ('@/components/topFan')
+const Page = () => import ('@/components/page')
 import swiper from 'swipe'
 export default {
   name:'list_h5',

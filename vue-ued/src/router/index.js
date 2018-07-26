@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/page/index'
-import ListUiix from '@/page/list_uiix'
-import ListPc from '@/page/list_pc'
-import ListBanner from '@/page/list_banner'
-import ListDesignStandard from '@/page/list_design_standard'
-import ListSiteNavigation from '@/page/list_site_navigation'
-import ListH5 from '@/page/list_h5'
-import DetailShare from '@/page/detail_share'
-import DetailShareUiix from '@/page/detail_share_uiix'
+const ListUiix = () => import ('@/page/list_uiix')
+const ListPc = () => import ('@/page/list_pc')
+const ListBanner = () => import ('@/page/list_banner')
+const ListDesignStandard = () => import ('@/page/list_design_standard')
+const ListSiteNavigation = () => import ('@/page/list_site_navigation')
+const ListH5 = () => import ('@/page/list_h5')
+const DetailShare = () => import ('@/page/detail_share')
+const DetailShareUiix = () => import ('@/page/detail_share_uiix')
 // import Page404 from '@/page/page404'
 Vue.use(Router)
 export default new Router({

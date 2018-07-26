@@ -52,8 +52,8 @@
 </template>
 
 <script>
-import TopNav from '../components/topnav.vue'
-import TopFan from '../components/topFan.vue'
+const TopNav = () => import ('@/components/topnav')
+const TopFan = () => import ('@/components/topFan')
 export default {
   name:'list_site_navigation',
   components:{

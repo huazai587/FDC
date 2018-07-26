@@ -50,12 +50,12 @@
       </div>
 </template>
 <script>
-import TopNav from '../components/topnav.vue'
-import topFan from '../components/topFan.vue'
-import Page from '../components/page.vue'
+const TopNav = () => import ('@/components/topnav')
+const TopFan = () => import ('@/components/topFan')
+const Page = () => import ('@/components/page')
 export default {
     name:'index',
-     components: { TopNav,Page,topFan },
+     components: { TopNav,Page,TopFan },
      data () {
         return {
           list: [],

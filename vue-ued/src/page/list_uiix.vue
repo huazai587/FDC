@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import TopNav from '../components/topnav.vue'
-import TopFan from '../components/topFan.vue'
-import vueWaterfallEasy from '../components/vue-waterfall-easy.vue'
+const TopNav = () => import ('@/components/topnav')
+const TopFan = () => import ('@/components/topFan')
+const vueWaterfallEasy = () => import ('@/components/vue-waterfall-easy')
 export default {
   name:'list_uiix',
   components:{
